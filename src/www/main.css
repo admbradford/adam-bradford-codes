@@ -42,11 +42,66 @@ table {
     border-spacing: 0;
 }
 
-html {
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: 'Droid Serif', serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-body {
-  font-size: 13px;
-  line-height: 20px;
+h1{
+    font-size: 40px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.lead{
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.home-intro img{
+    width:100%;
+    max-width:540px;
+}
+
+.home-intro .intro-image,
+.home-intro .intro-text {
+    max-width: 540px;
+    width:50%;
+    float:left;
+}
+
+@media screen and (max-width:1076px){
+    .home-intro .intro-image{
+        width:40%;
+    }
+    .home-intro .intro-text{
+        width:60%;
+    }
+}
+
+@media screen and (max-width:800px){
+    .home-intro .intro-text:last-child{
+        width: 100%;
+        max-width: 100%;
+        float:none;
+    }
+}
+@media screen and (max-width:600px){
+    h1{
+        font-size: 28px;
+    }
+    .lead{
+        font-size: 20px;
+    }
+    .home-intro .intro-image,
+    .home-intro .intro-text {
+        width:100%;
+        float:none;
+        text-align:center;
+    }
+
+    .home-intro img{
+        width: 200px;
+    }
 }

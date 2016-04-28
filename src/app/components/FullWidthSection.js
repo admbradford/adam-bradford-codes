@@ -34,6 +34,7 @@ const FullWidthSection = createClass({
       content: {
         maxWidth: 1080,
         margin: '0 auto',
+        fontFamily: 'Droid Serif, serif',
       },
       rootWhenSmall: {
         paddingTop: desktopGutter * 2,

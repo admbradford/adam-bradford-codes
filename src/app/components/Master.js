@@ -62,7 +62,7 @@ const Master = createClass({
         // Needed to overlap the examples
         zIndex: this.state.muiTheme.zIndex.appBar + 1,
         top: 0,
-        backgroundColor: '#fff',
+        backgroundColor: 'transparent',
       },
       root: {
         paddingTop: spacing.desktopKeylineIncrement,
@@ -70,6 +70,7 @@ const Master = createClass({
       },
       content: {
         margin: spacing.desktopGutter,
+        fontFamily: 'Droid Serif, serif',
       },
       contentWhenMedium: {
         margin: `${spacing.desktopGutter * 2}px ${spacing.desktopGutter * 3}px`,
